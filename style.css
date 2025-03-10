@@ -1,4 +1,104 @@
-html{
-    font-size: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
+html {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 5.5rem;
+  font-family: Roboto Slab, sans-serif;
+}
+
+section {
+  padding: 8rem;
+}
+
+.card-cont {
+  display: grid;
+  gap: 3.5rem;
+  margin: 9rem 0rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  box-shadow: 2px 2px 10px 0px #666;
+  border-radius: 3rem;
+}
+
+.card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+}
+
+.card div {
+  padding: 1.5rem;
+}
+
+.card p {
+  font-weight: 700;
+  font-size: 3rem;
+
+  margin-bottom: 3rem;
+}
+
+.card span {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 25px;
+  width: 50%;
+}
+
+.review {
+  background-color: #efefef;
+}
+
+.review > div {
+  margin-top: 5rem;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 45%;
+  height: auto;
+  padding: 4rem 4.5rem;
+}
+
+.review > div p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.review-profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.5rem;
+}
+
+.review-profile img{
+    width: 19rem;
+    height: 19rem;
+}
+
+.review-profile div h4{
+    font-family: Roboto Slab, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.review-profile div img{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 2rem;
+}
